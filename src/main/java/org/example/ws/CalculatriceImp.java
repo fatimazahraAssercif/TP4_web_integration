@@ -2,7 +2,6 @@ package org.example.ws;
 
 import javax.jws.WebService;
 
-// endpointInterface pointe vers l'interface SEI définie ci-dessus
 @WebService(endpointInterface = "org.example.ws.ICalculatrice")
 public class CalculatriceImp implements ICalculatrice {
 
@@ -18,7 +17,6 @@ public class CalculatriceImp implements ICalculatrice {
         return x * y;
     }
 
-    // À COMPLÉTER — Question 7 :
     @Override
     public double subtract(double x, double y) {
         System.out.println("Appel subtract(" + x + ", " + y + ")");
@@ -29,7 +27,6 @@ public class CalculatriceImp implements ICalculatrice {
     public double divide(double x, double y) throws ArithmeticException {
         System.out.println("Appel divide(" + x + ", " + y + ")");
         if (y == 0) {
-            // On lève une exception explicite plutôt que de retourner NaN
             throw new ArithmeticException("Division par zéro impossible");
         }
         return x / y;

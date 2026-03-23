@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         CalculatriceImpService service = new CalculatriceImpService();
-        ICalculatrice port = service.getCalculatriceImpPort(); // ← corrigé
+        ICalculatrice port = service.getCalculatriceImpPort(); 
 
         System.out.println("50 + 40 = " + port.add(50, 40));
         System.out.println("6 x 7 = " + port.multiply(6, 7));

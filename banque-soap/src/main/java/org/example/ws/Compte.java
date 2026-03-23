@@ -9,7 +9,6 @@ public class Compte {
     private double solde;
     private Date dateCreation;
 
-    // Constructeur vide obligatoire pour JAXB
     public Compte() {}
 
     public Compte(String id, double solde, Date dateCreation) {
@@ -24,7 +23,6 @@ public class Compte {
     public double getSolde() { return solde; }
     public void setSolde(double solde) { this.solde = solde; }
 
-    // @XmlTransient = ignoré dans la sérialisation XML
     @XmlTransient
     public Date getDateCreation() { return dateCreation; }
     public void setDateCreation(Date dateCreation) { this.dateCreation = dateCreation; }

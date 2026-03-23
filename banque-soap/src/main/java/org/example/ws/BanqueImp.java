@@ -8,10 +8,10 @@ import java.util.Map;
 @WebService(endpointInterface = "org.example.ws.IBanque")
 public class BanqueImp implements IBanque {
 
-    // Base de données simulée en mémoire
+    
     private Map<String, Compte> comptes = new HashMap<>();
 
-    // Constructeur — on crée 3 comptes de test
+    
     public BanqueImp() {
         comptes.put("C001", new Compte("C001", 5000.0, new Date()));
         comptes.put("C002", new Compte("C002", 12000.0, new Date()));

@@ -8,12 +8,11 @@ public class ServeurSOAP {
 
         System.out.println("Démarrage du serveur SOAP...");
 
-        // Publie CalculatriceImp à l'URL donnée
-        // JAX-WS génère automatiquement le WSDL et le skeleton
+        
         Endpoint.publish(url, new CalculatriceImp());
 
         System.out.println("Service SOAP démarré sur : " + url);
         System.out.println("WSDL disponible sur      : " + url + "?wsdl");
-        // Le programme reste en vie → le serveur continue d'écouter
+        
     }
 }
