@@ -1,0 +1,6 @@
+{
+    "java.project.sourcePaths": [
+        "src/main/java",
+        "target/generated-sources/wsimport"
+    ]
+}
